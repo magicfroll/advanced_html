@@ -1,0 +1,40 @@
+@import 'vars';
+
+.footer {
+    background: $colorTextBlack;
+    min-height: 79px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_left {
+        color: $colorWhite;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &_right {
+        display: flex;
+        gap: 7px;
+
+        &_box {
+            background-color: $colorWhite;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: $transitionSite;
+    
+            &:hover {
+                background-color: $colorSite;
+                path {
+                    fill: $colorWhite;
+                }
+            }
+        }
+    }
+}
+
+
+

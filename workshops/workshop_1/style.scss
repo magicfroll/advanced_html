@@ -1,0 +1,92 @@
+@import 'vars';
+@import 'mixins';
+
+// Задание2
+// 1. В html добавить блок <div class="container"></div>
+// 2. Создайте переменную ширины сайта и присвоить ей значение 1200px
+// 3. Создайте переменную значения цвета текста сайта, которая будет равна #8A2BE2
+// 4. Внутри блока container добавить заголовок “Знакомство с препроцессорами” слово
+// препроцессорами необходимо выделить цветом из переменной пункт 3
+// 5. Создайте комментарий в вашем коде scss, добавьте в него произвольный текст
+
+.container {
+    width: $widthContainer;
+    margin: auto;
+}
+
+.span {
+    color: $colorSite;
+}
+
+// Задание3
+// Используя вложенность препроцессоров, необходимо переписать код css в препроцессорный
+// .nav {
+// display: flex;
+// gap: 16px;
+// }
+// .nav__link {
+// text-decoration: none;
+// }
+// 2. Добавить переменную gap, и заменить ее у селектора .nav
+
+.nav {
+    display: flex;
+    gap: $gap;
+
+    &__link {
+        text-decoration: none;
+        @extend %font-style;
+        }
+        
+    &__text {
+        color: $colorSite;
+    }
+}
+
+.modify--class {
+    text-align: center;
+}
+
+
+// Дан код html
+// <div class="content">
+// <div class="content__item"></div>
+// <div class="content__item"></div>
+// <div class="content__item"></div>
+// <div class="content__item"></div>
+// </div>
+// 1. Для блока content добавить стили display: flex;
+// 2. Создать вложенность с использованием препроцессоров
+// 3. Для блока content__item добавить значение ширины, равное ¼ от переменной ширины container
+// 4. Для блока content добавить gap равный переменной из задания 3
+// 5. Создать новую переменную, равную: 1px solid #000;
+// 6. Добавить стили для content__item. используя переменную из пункта 6
+// height: 200px;
+// border: 1px solid #000;
+
+.content {
+    gap: $gap;
+    @include flex;     
+
+    &__item {
+        display: flex;
+        width: calc($widthContainer / 4);   
+        height: 200px;
+        border: $border; 
+        justify-content: center;
+        align-items: center;    
+    }
+    
+}
+
+
+// 1. Создать примесь
+// display: flex;
+// flex-wrap: wrap;
+// justify-content: center;
+// align-items: center;
+// 1. Добавить данную примесь к блоку content
+// 2. Создать наследование
+// font-family: sans-serif;
+// font-style: normal;
+// 1. Добавить данное наследование для nav__link

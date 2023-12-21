@@ -1,0 +1,30 @@
+@mixin flexContentCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin siteButton ($jContent) {
+    width: 212px;
+    height: 48px;
+    background: none;
+    display: flex;
+    justify-content: $jContent;
+    align-items: center;
+    border: 1px solid $colorSite;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $colorSite;
+    gap: 22px;
+    transition: $transitionSite;
+
+    &:hover {
+        color: $colorWhite;
+        background-color: $colorSite;
+    }
+
+    &:hover path {
+        fill: $colorWhite;
+    }
+}

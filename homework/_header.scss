@@ -1,0 +1,106 @@
+@import 'vars';
+
+
+.header {
+    min-height: 75px;
+    background: $colorTextBlack;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    &_left {
+        display: flex;
+        align-items: center;
+        gap: 41px;
+
+        & svg path {
+            transition: $transitionSite;
+        }
+
+        & svg:hover path {
+            fill: $colorSite;
+        }
+    }
+
+    &_right {
+        display: flex;
+        align-items: center;
+        gap: 33px;
+
+        & svg path {
+            transition: $transitionSite;
+        }
+
+        & svg:hover path {
+            fill: $colorSite;
+        }
+    }
+}
+
+#burger {
+    position: absolute;
+    left: -10000px;
+    visibility: hidden;
+
+    &:not(:checked)~nav {
+        top: -1000px;
+        right: 50px;
+        visibility: hidden;
+        z-index: 0;
+    }
+}
+
+.nav {
+    background-color: $colorWhite;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    width: $widthBurger;
+    min-height: $heightBurger;
+    padding: 32px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+    top: 75px;
+    right: 50px;
+    transition: all 1s;
+    transition-timing-function: ease-out;
+
+    & a:hover {
+        color: $colorSite;
+    }
+
+    &__content {
+        background-color: $colorWhite;
+    }
+
+    &__heading {
+        color: $colorTextBlack;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-bottom: 4px;
+    }
+
+    &__title {
+        color: $colorSite;
+        font-size: 14px;
+        font-weight: 400;
+        padding-top: 20px;
+    }
+
+    &__link-box {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        padding: 12px 16px;
+    }
+
+    &__link {
+        color: $colorGrey;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
