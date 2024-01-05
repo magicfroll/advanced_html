@@ -1,0 +1,74 @@
+@import "./fonts/fonts";
+
+body {
+    margin: 0 auto;
+//   width: 800px;
+}
+
+.title {
+  font-family: "merriweatherbold";
+}
+
+.text {
+  font-family: "open_sansregular";
+}
+
+// Контур текста
+.subtitle {
+  font-size: 50px;
+  color: #fff;
+  -webkit-text-stroke: 1px navy;
+}
+
+.triangle {
+  margin-bottom: 50px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 60px 120px 60px;
+  border-color: transparent transparent #4f46e5 transparent;
+}
+
+.borders {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container1 {
+  border: 10px solid transparent;
+  border-image: url(img/border_round.png) 30;
+  margin: 50px;
+}
+
+.container2 {
+  margin: 50px;
+  border-image: linear-gradient(to right, salmon 0%, purple 100%) 10 / 10px /
+    20px space;
+}
+
+.container3 {
+  width: 260px;
+  height: 100px;
+  border-style: solid;
+  border-image-width: 15px;
+  border-image-source: url(img/border_round.png);
+  border-image-slice: 30;
+  border-image-repeat: round;
+}
+
+* {
+  box-sizing: border-box;
+}
+.wrap {
+  height: 200px;
+  padding: 25px;
+//   background: #00e4f6;
+}
+.gradient {
+  height: 150px;
+  width: 50%;
+  margin: 0 auto;
+  border: 10px solid transparent;
+  border-image: linear-gradient(to right, transparent 0%, #adf2f7 100%);
+  border-image-slice: 1;
+}

@@ -1,0 +1,24 @@
+.item {
+    height: 400px;
+    background-color: #ccc;
+}
+
+.item1 {
+    clip-path: circle(150px at 5px 200px);
+    background-image: url(https://img.freepik.com/free-photo/mesmerizing-shot-of-crystal-blue-ocean-waves_181624-48854.jpg?w=900&t=st=1704123282~exp=1704123882~hmac=c713e08ba915e299fecc92ebbe12d13e3ac2b6e8c02786161d99dcba4b28e6b5);
+    background-size: cover;
+}
+
+.item2 {
+    clip-path: ellipse(130px 140px at 10% 20%);
+}
+
+.item3 {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.item4 {
+    clip-path: polygon(50% 10%, 12% 100%, 30% 40%, 0% 25%);
+    background-image: url(https://img.freepik.com/free-photo/mesmerizing-shot-of-crystal-blue-ocean-waves_181624-48854.jpg?w=900&t=st=1704123282~exp=1704123882~hmac=c713e08ba915e299fecc92ebbe12d13e3ac2b6e8c02786161d99dcba4b28e6b5);
+    
+}
