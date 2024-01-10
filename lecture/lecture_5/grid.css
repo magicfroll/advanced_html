@@ -1,0 +1,12 @@
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  padding-left: calc(50% - 400px);
+  padding-right: calc(50% - 400px);
+}
+
+.item {
+  border: 1px solid #000;
+  min-height: 100px;
+}/*# sourceMappingURL=grid.css.map */

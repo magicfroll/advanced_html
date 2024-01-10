@@ -6,9 +6,10 @@
 @import 'product';
 @import 'catalog';
 @import 'cart';
+@import 'registration';
 
 html, body, div, img, a, hr, p, table, tr, td, h1, h2, h3,
-h4, h5, h6, input, select, textarea, button {
+h4, h5, h6, ul, li, input, select, textarea, button {
     box-sizing: border-box;
     border: none;
     border-radius: 0;

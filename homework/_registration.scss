@@ -1,0 +1,111 @@
+.reg {
+  display: flex;
+  justify-content: space-between;
+  gap: 128px;
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+
+.reg-form {
+  display: flex;
+  flex-direction: column;
+  &__input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__heading {
+    color: #222;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  &__input {
+    max-width: 360px;
+    height: 45px;
+    border: 1px solid #a4a4a4;
+    padding: 13px 17px 16px;
+  }
+  &__sex-checbox {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    display: flex;
+    gap: 20px;
+    color: #000;
+    font-family: Lato;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  &__pass-req {
+    margin-top: 16px;
+    margin-bottom: 39px;
+    color: #b1b1b1;
+    font-family: Lato;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    max-width: 360px;
+  }
+  &__button {
+    display: flex;
+    gap: 20px;
+  }
+  &__join-button {
+    padding: 16px 20px 17px 29px;
+    width: 167px;
+    height: 50px;
+    border: 1px solid #a4a4a4;
+    background-color: #fff;
+    color: #000;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: all 0.5s;
+    & svg {
+      width: 17px;
+      height: 9px;
+      margin-left: 20px;
+      & path {
+        fill: #000;
+      }      
+    }
+  }
+
+  &__join-button:hover {
+    color: #fff;
+    background-color: $colorSite;
+    border-color: $colorSite;
+  }
+
+  &__join-button:hover path {
+    fill: #fff;    
+  }
+}
+
+.loyalty-perks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 652px;
+  color: #000;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  &__advantages {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__advantage-item svg {
+    margin-right: 2px;
+  }
+}

@@ -1,0 +1,26 @@
+html {
+  font-size: 16px;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.heading {
+  font-size: 1.5rem;
+}
+
+.text {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 425px) {
+  html {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=rem.css.map */
