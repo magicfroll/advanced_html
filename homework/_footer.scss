@@ -7,17 +7,18 @@
     justify-content: space-between;
     align-items: center;
 
-    &_left {
+    &__left {
         color: $colorWhite;
+        font-family: "Lato";
         font-size: 16px;
         font-weight: 400;
     }
 
-    &_right {
+    &__right {
         display: flex;
         gap: 7px;
 
-        &_box {
+        &-item {
             background-color: $colorWhite;
             width: 32px;
             height: 32px;

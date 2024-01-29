@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+@import 'vars';
+@import 'mixins';
+
 .filter-sort {
-  height: 132px;
+  padding-top: 51px;
+  padding-bottom: 64px;
   position: relative;
   display: flex;
   gap: 30px;
@@ -40,6 +46,7 @@
   }
 
   &__heading {
+    font-family: Lato;
     color: #000;
     font-size: 14px;
     font-style: normal;
@@ -136,3 +143,112 @@
     color: #ebebeb;
   }
 }
+
+.pageCarousel {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+  margin-bottom: 97px;
+}
+
+.carouselPart {
+  width: 282px;
+  height: 43px;
+  background-color: $colorWhite;
+  border: 1px solid #EBEBEB;
+
+  
+  &-inner {
+      width: 70%;
+  }
+
+  &-item {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  &__link {
+      color: #C4C4C4;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+  }
+
+  &__link:hover {
+      color: $colorSite;
+  }
+
+  &-control-prev {
+      width: 30px;
+      height: 30px;
+      background-color: $colorWhite;
+      padding-top: 10px;
+      padding-left: 10px;
+  }
+
+  &-control-next {
+      margin-top: -2px;
+      padding-right: 10px;
+
+      &-icon {
+          width: 20px;
+          height: 20px;
+          background-color: $colorWhite;
+      }
+  }
+}
+
+@media(max-width: 1165px) {
+  .filter-sort {
+    justify-content: center;
+  }
+  .display-none {
+    display: none;
+  }
+
+}
+
+@media(max-width: 1024px) {
+    .filter-sort {      
+      padding-top: 24px;
+      padding-bottom: 40px;
+    }
+    .pageCarousel {
+      margin-top: 40px;
+      margin-bottom: 63px;
+    }
+    .advantages {
+        flex-direction: column;
+    }
+    .subscribe {
+        flex-direction: column;
+        gap: 48px;
+        padding-top: 64px;
+        padding-bottom: 140px;
+    }
+}
+
+@media(max-width: 767px) {
+  .top-head {
+    flex-direction: column;
+    justify-content: space-around;
+    
+  }
+  .filter {
+    width: 76px;
+    &__heading {
+      display:none;
+    }
+    & svg {
+      width: 37.5px;
+      height: 25px;
+    }
+  }
+  .sort {
+    &__heading {      
+      font-size: 12px;  
+    }
+  }  
+} 
+

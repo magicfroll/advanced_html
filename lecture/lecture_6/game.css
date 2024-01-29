@@ -1,0 +1,106 @@
+@keyframes duck-fly-1 {
+  0% {
+    left: -75px;
+    top: 26vh;
+  }
+  50% {
+    left: 12vw;
+    top: 60vh;
+  }
+  100% {
+    left: 100vw;
+    top: 9vh;
+  }
+}
+@keyframes duck-fly-2 {
+  0% {
+    left: -75px;
+    top: 61vh;
+  }
+  50% {
+    left: 14vw;
+    top: 71vh;
+  }
+  100% {
+    left: 100vw;
+    top: 81vh;
+  }
+}
+@keyframes duck-fly-3 {
+  0% {
+    left: -75px;
+    top: 74vh;
+  }
+  50% {
+    left: 83vw;
+    top: 59vh;
+  }
+  100% {
+    left: 100vw;
+    top: 83vh;
+  }
+}
+@keyframes duck-fly-4 {
+  0% {
+    left: -75px;
+    top: 8vh;
+  }
+  50% {
+    left: 56vw;
+    top: 1vh;
+  }
+  100% {
+    left: 100vw;
+    top: 17vh;
+  }
+}
+.body {
+  counter-reset: count;
+  height: 100vh;
+  margin: 0;
+  background-image: url(img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.duck_check {
+  position: absolute;
+  visibility: hidden;
+  left: -9999999px;
+}
+.duck_check:checked {
+  counter-increment: count;
+}
+.duck_check:checked ~ label {
+  display: none;
+}
+
+.count-info {
+  position: absolute;
+  top: 14px;
+  right: 24px;
+}
+.count-info::before {
+  content: counter(count);
+}
+
+.duck {
+  position: absolute;
+}
+.duck__img {
+  width: 75px;
+}
+.duck_1 {
+  animation: duck-fly-1 7s ease-in 1s both;
+}
+.duck_2 {
+  animation: duck-fly-2 7s ease-in 2s both;
+}
+.duck_3 {
+  animation: duck-fly-3 7s ease-in 3s both;
+}
+.duck_4 {
+  animation: duck-fly-4 7s ease-in 4s both;
+}/*# sourceMappingURL=game.css.map */

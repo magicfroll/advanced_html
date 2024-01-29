@@ -1,0 +1,228 @@
+@keyframes lampAnimation-1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 20px rgb(245, 245, 113));
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+@keyframes lampAnimation-2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 20px rgb(245, 245, 113));
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+@keyframes lampAnimation-3 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 20px rgb(245, 245, 113));
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+@keyframes lampAnimation-4 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 20px rgb(245, 245, 113));
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+@keyframes lampAnimation-5 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 20px rgb(245, 245, 113));
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+@keyframes lampAnimation-6 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 20px rgb(245, 245, 113));
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+@keyframes lampAnimation-7 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 20px rgb(245, 245, 113));
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+@keyframes lampAnimation-8 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 20px rgb(245, 245, 113));
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+@keyframes lampAnimation-9 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 20px rgb(245, 245, 113));
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+@keyframes lampAnimation-10 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 20px rgb(245, 245, 113));
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+.body {
+  counter-reset: count;
+  height: 100vh;
+  margin: 0;
+  background-image: url(img/1646044363_11-gamerwall-pro-p-berlin-nochyu-iz-kosmosa-krasivie-oboi-14.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.lamp {
+  position: absolute;
+  animation: lampAnimation 3s infinite;
+}
+.lamp_check {
+  position: absolute;
+  left: -9999999px;
+  visibility: hidden;
+}
+.lamp_check:checked {
+  counter-increment: count;
+}
+.lamp_check:checked ~ label {
+  display: none;
+}
+.lamp__img {
+  width: 50px;
+}
+.lamp_1 {
+  left: 69vw;
+  top: 27vh;
+  animation: lampAnimation-1 3s ease-in 1s both;
+}
+.lamp_2 {
+  left: 19vw;
+  top: 21vh;
+  animation: lampAnimation-2 3s ease-in 2s both;
+}
+.lamp_3 {
+  left: 7vw;
+  top: 6vh;
+  animation: lampAnimation-3 3s ease-in 3s both;
+}
+.lamp_4 {
+  left: 86vw;
+  top: 6vh;
+  animation: lampAnimation-4 3s ease-in 4s both;
+}
+.lamp_5 {
+  left: 37vw;
+  top: 43vh;
+  animation: lampAnimation-5 3s ease-in 5s both;
+}
+.lamp_6 {
+  left: 12vw;
+  top: 34vh;
+  animation: lampAnimation-6 3s ease-in 6s both;
+}
+.lamp_7 {
+  left: 37vw;
+  top: 56vh;
+  animation: lampAnimation-7 3s ease-in 7s both;
+}
+.lamp_8 {
+  left: 23vw;
+  top: 56vh;
+  animation: lampAnimation-8 3s ease-in 8s both;
+}
+.lamp_9 {
+  left: 45vw;
+  top: 90vh;
+  animation: lampAnimation-9 3s ease-in 9s both;
+}
+.lamp_10 {
+  left: 25vw;
+  top: 57vh;
+  animation: lampAnimation-10 3s ease-in 10s both;
+}
+
+.count-info::before {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  color: #fff;
+  content: counter(count);
+  transform: translate(-50%);
+}/*# sourceMappingURL=workshop6.css.map */

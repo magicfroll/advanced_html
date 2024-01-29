@@ -10,7 +10,7 @@
   align-items: center;
   position: relative;
 
-  &_left {
+  &-left {
     display: flex;
     align-items: center;
     gap: 41px;
@@ -24,7 +24,7 @@
     }
   }
 
-  &_right {
+  &-right {
     display: flex;
     align-items: center;
     gap: 33px;
@@ -72,6 +72,7 @@
 
     &__heading {
         color: $colorTextBlack;
+        font-family: "Lato";
         font-size: 14px;
         font-style: normal;
         font-weight: 700;
@@ -80,6 +81,7 @@
 
     &__summary {
         color: $colorSite;
+        font-family: "Lato";
         font-size: 14px;
         font-weight: 400;
         padding-top: 24px;
@@ -94,6 +96,7 @@
 
     &__link {
         color: $colorGrey;
+        font-family: "Lato";
         font-size: 14px;
         font-weight: 400;
     }
